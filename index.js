@@ -1,5 +1,5 @@
-var express = require('express'),
-    fs = require('fs')
+var express = require('express')
+var fs = require('fs')
 
 var app = express()
 
@@ -8,9 +8,11 @@ app.use(express.static(__dirname + '/public'))
 
 app.get('/', function(request, response) {
   #response.send('Hello World 2!')
-  var fileContents = fs.readFileSync('index.html', 'utf8').toString()
+  var fileContents = fs.readFileSync('index.html', 'utf8')
   console.log(fileContents)
-  response.send(file)
+  var out = fileContents.toString()
+  console.log(out)
+  response.send(out)
 })
 
 app.listen(app.get('port'), function() {
