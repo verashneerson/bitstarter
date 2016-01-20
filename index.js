@@ -8,8 +8,8 @@ app.use(express.static(__dirname + '/public'))
 
 app.get('/', function(request, response) {
   #response.send('Hello World 2!')
-  var buf = fs.readFile('index.html', 'utf8')
-  response.send(buf.toString)
+  var file = fs.readFile('index.html', 'utf8').toString()
+  response.send(file)
 })
 
 app.listen(app.get('port'), function() {
