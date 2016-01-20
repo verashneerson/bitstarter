@@ -8,7 +8,8 @@ app.use(express.static(__dirname + '/public'))
 
 app.get('/', function(request, response) {
   #response.send('Hello World 2!')
-  var file = fs.readFile('index.html', 'utf8').toString()
+  var fileContents = fs.readFileSync('index.html', 'utf8').toString()
+  console.log(fileContents)
   response.send(file)
 })
 
