@@ -4,55 +4,148 @@
     <meta charset="utf-8">
     <title>My First Bitstarter</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/styles.css">
     <style type="text/css">
-      body { padding-top: 20px; padding-bottom: 40px;}
-      .container { width: 960px; }
-      p.lead { padding-top: 15px; }
-      .navigation, .pitch, .section1, .section2, .faq, .footer { padding: 10px 0; }
-      .video, .thermometer, .order, .social { border: 1px dotted; text-align: center; }
-      .video { height: 124px; line-height: 40px; }
-      .thermometer, .order, .social { height: 40px; line-height: 40px; }
-      div.row { border: 1px solid; }
+      body { padding-bottom: 40px; padding-top: 60px; }
     </style>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Sans|Ubuntu' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="container">
-      <div class="row navigation">
-	<div class="col-xs-2 logo">Logo</div>
-	<div class="col-xs-6 blank"></div>
-	<div class="col-xs-4 about">About</div>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+	<div class="navbar-header">
+	  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-example" aria-expanded="false">
+	    <span class="sr-only">Toggle navigation</span>
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+	  </button>
+	  <a class="navbar-brand" href="#">Bitstarter</a>
+	</div>
+	<div class="collapse navbar-collapse" id="collapse-example">
+	  <ul class="nav navbar-nav">
+	    <li class="active"><a href="#">Home</a></li>
+	    <li><a href="#">About</a></li>
+	    <li><a href="#">Contact</a></li>
+	  </ul>
+	</div>
       </div>
+    </nav>
+    <div class="container">
       <div class="row heading">
 	<div class="col-xs-12">
-	  <h1>Bitstarter Title</h1>
+	  <h1 class="text-center">Product</h1>
 	</div>
       </div>
       <div class="row subheading">
 	<div class="col-xs-12">
-	  <p class="lead">This is my first bitstarter project.</p>
+	  <p class="lead text-center">One sentence description.</p>
 	</div>
       </div>
       <div class="row pitch">
-	<div class="col-xs-6 video">
-	  Video
+	<div class="col-xs-12 col-sm-5 col-sm-offset-1 video">
+	  <a href="#" class="thumbnail"><img src="http://placehold.it/480x300"></a>
 	</div>
-	<div class="col-xs-6">
-	  <div class="thermometer">Thermometer</div>
-	  <div class="order">Order</div>
-	  <div class="social">Social</div>
+	<div class="col-xs-12 col-sm-5 actions">
+	  <div class="row">
+	    <div class="col-xs-8 col-xs-offset-2">
+	      <div class="statistics row">
+		<div class="col-xs-4">
+		  <div class="linediv-l">
+		    <h3>1000</h3><p>backers</p>
+		  </div>
+		</div>
+		<div class="col-xs-4">
+		  <div class="linediv-c">
+		    <h3>$6000</h3><p>of $10,000</p>
+		  </div>
+		</div>
+		<div class="col-xs-4">
+		  <div class="linediv-r">
+		    <h3>10</h3><p>days left</p>
+		  </div>
+		</div>
+	      </div>
+	    </div>
+	    <div class="row">
+	      <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+		<div class="progress">
+		  <div class="thermometer progress-bar progress-bar-success" role="progressbar" 
+		       aria-valuenow="60" aria-valuemax="100" style="width: 40%;">
+		    <span class="sr-only">60% Complete (success)</span>
+		  </div>
+		</div>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="row">
+	    <div class="col-xs-6 col-xs-offset-3 order text-center">
+	      <button class="btn btn-success btn-lg">Preorder</button>
+	    </div>
+	  </div>
+	  <div class="row">
+	    <div class="col-xs-8 col-xs-offset-2 social text-center">
+	      <button class="btn btn-primary"><i class="fa fa-twitter"></i> | Twitter</button>
+	      <button class="btn btn-primary"><i class="fa fa-facebook"></i> | Facebook</button>
+	    </div>
+	  </div>
 	</div>
       </div>
       <div class="row section1">
-	<div class="col-xs-12">Marketing Section 1</div>
+	<div class="col-xs-12 col-sm-5 col-sm-offset-1">
+	  <a href="#" class="thumbnail"><img src="http://placehold.it/480x300"></a>
+	</div>
+	<div class="col-xs-12 col-sm-5">
+	  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In imperdiet, massa vel suscipit faucibus, tellus sem tincidunt mi, vitae ultricies lectus libero non nulla. Donec venenatis dui nec elit pharetra, eget sagittis eros fermentum. Curabitur nunc ante, luctus vitae rhoncus id, faucibus sit amet massa. Nulla facilisi. Donec rutrum elementum vehicula. Integer vel purus eget leo lobortis tincidunt. Duis dapibus tempus massa, a dapibus orci commodo nec. Maecenas tempus iaculis lorem, non placerat libero suscipit quis.</p>
+	</div>
       </div>
       <div class="row section2">
-	<div class="col-xs-12">Marketing Section 2</div>
+	<div class="col-xs-12 col-sm-5 col-sm-offset-1">
+	  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In imperdiet, massa vel suscipit faucibus, tellus sem tincidunt mi, vitae ultricies lectus libero non nulla. Donec venenatis dui nec elit pharetra, eget sagittis eros fermentum. Curabitur nunc ante, luctus vitae rhoncus id, faucibus sit amet massa. Nulla facilisi. Donec rutrum elementum vehicula. Integer vel purus eget leo lobortis tincidunt. Duis dapibus tempus massa, a dapibus orci commodo nec. Maecenas tempus iaculis lorem, non placerat libero suscipit quis.</p>
+	</div>
+	<div class="col-xs-12 col-sm-5">
+	  <a href="#" class="thumbnail"><img src="http://placehold.it/480x300"></a>
+	</div>
       </div>
       <div class="row faq">
-	<div class="col-xs-12">FAQ</div>
+	<div class="col-xs-10 col-xs-offset-1">
+	  <h3>FAQ</h3>
+	  <div class="panel-group" id="accordion2">
+	    <div class="panel panel-default">
+	      <div class="panel-heading" role="tab" id="headingOne">
+		<a role="button" class="panel-title"  data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+		  What does FAQ stand for?
+		</a>
+	      </div>
+	      <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+		<div class="panel-body">
+		  Frequently Asked Questions.
+		</div>
+	      </div>
+	    </div>
+	    <div class="panel panel-default">
+	      <div class="panel-heading" role="tab" id="headingTwo">
+		<a class="collapsed panel-title" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+		  What's a Frequently Asked Question?
+		</a>
+	      </div>
+	      <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+		<div class="panel-body">
+		  A question which is commonly asked by users.
+		</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>	   
       </div>
-      <div class="row section1">
-	<div class="col-xs-12">Footer</div>
+      <div class="row footer">
+	<div class="col-xs-12 text-center">
+	  <p>This work is licensed under the <a href="#">CC By-SA 3.0</a>, without all the craft that would otherwise be put at the bottom of the page.</p>
+	</div>
       </div>
     </div>
   </body>
